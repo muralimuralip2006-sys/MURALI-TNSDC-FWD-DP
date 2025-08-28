@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital portfolio — Front-end web development | Murali P</title>
+  <meta name="description" content="Digital portfolio: Front-end web development by Murali P" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== Multicolour Navbar ===== -->
+  <div class="nav-wrap">
+    <nav class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span class="name">Murali&nbsp;P</span>
+      </div>
+      <button class="nav-toggle pill shadow-soft" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" role="navigation" aria-label="Primary">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <!-- mobile menu -->
+    <div class="container mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <header id="home" class="hero section">
+    <div class="container hero-inner">
+      <div class="kicker">Digital portfolio</div>
+      <h1 class="title">Front-end web development</h1>
+      <p class="subtitle">Clean UI, responsive layouts, and delightful micro-interactions.</p>
+
+      <div class="highlight-card glass">
+        <div class="highlights">
+          <div class="item">
+            <h4>Responsive by default</h4>
+            <p>Mobile-first layouts that adapt beautifully to any screen.</p>
+          </div>
+          <div class="item">
+            <h4>Accessible UI</h4>
+            <p>Focus states, semantic HTML, and keyboard friendly navigation.</p>
+          </div>
+          <div class="item">
+            <h4>Performance minded</h4>
+            <p>Lean assets, minimal dependencies, and fast render paths.</p>
+          </div>
+          <div class="item">
+            <h4>Modern aesthetics</h4>
+            <p>Soft shadows, gentle gradients, and subtle motion.</p>
+          </div>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="mailto:muralimurali.p2006@gmail.com">Email Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section">
+    <div class="container card">
+      <h2>About</h2>
+      <p class="lead">Hi! I’m <strong>Murali P</strong>, a front-end developer passionate about crafting polished, responsive web interfaces. I love turning ideas into fast, accessible websites with clean, maintainable code.</p>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section">
+    <div class="container card">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3 / Flexbox / Grid</div>
+        <div class="skill">JavaScript (ES6+)</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">Accessibility (a11y)</div>
+        <div class="skill">Git / GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 style="color: var(--text); margin-bottom: 14px;">Projects</h2>
+      <div class="projects">
+        <article class="card">
+          <h3 style="margin-top:0">Landing Page Concept</h3>
+          <p class="lead">A sleek, mobile-first landing page with animated hero and sticky multicolour navbar.</p>
+        </article>
+        <article class="card">
+          <h3 style="margin-top:0">Todo App UI</h3>
+          <p class="lead">Minimal JS app with keyboard shortcuts, focus management, and theming.</p>
+        </article>
+        <article class="card">
+          <h3 style="margin-top:0">Gallery Grid</h3>
+          <p class="lead">CSS Grid powered photo gallery with progressive enhancement.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section">
+    <div class="container card contact-card">
+      <h2>Contact</h2>
+      <div class="row">
+        <div class="contact-item">
+          <strong>Email:</strong>
+          <a id="emailLink" href="mailto:muralimurali.p2006@gmail.com">muralimurali.p2006@gmail.com</a>
+          <span class="copy-badge" id="copyStatus" role="status" aria-live="polite"></span>
+        </div>
+        <div class="contact-item">
+          <strong>Name:</strong>
+          <span>Murali P</span>
+        </div>
+        <div class="contact-item">
+          <strong>Title:</strong>
+          <span>Digital portfolio — Front-end web development</span>
+        </div>
+      </div>
+      <div class="cta-row" style="margin-top:12px">
+        <a class="btn primary" href="#home">Back to top</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Murali P • Built with HTML, CSS & JS
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
